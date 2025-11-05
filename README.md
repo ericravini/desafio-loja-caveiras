@@ -3,8 +3,12 @@
 
 🔗 https://ericravini.github.io/desafio-loja-caveiras/
 
-> 🖼️ Imagem do projeto:
-> ![Tela do projeto](./tela-do-site.png)
+---
+
+## 🖼️ Imagem do projeto:
+![Tela do projeto](./tela-do-site.png)
 > Projetado apenas para desktop, não é responsivo com outros tamanhos de tela.
+
+---
 
 ⚠️ EU NÃO TENHO O DIREITO DAS IMAGENS UTILIZADAS NO PROJETO! AS IMAGENS FORAM USADAS APENAS PARA FINS DE ESTUDO.
