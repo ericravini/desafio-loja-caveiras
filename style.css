@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --bgcolor: #efeff0;
+    --primary: #023e8a;
+    --secondary: #e2eeff;
+}
+
+body, html {
+    padding: 8px;
+    height: 100%;
+    max-height: 100vh;
+
+    background-color: var(--bgcolor);
+    scroll-behavior: smooth;
+}
+
+main {
+    margin: 0 auto;
+    padding: 8px;
+    width: 60%;
+    height: 100%;
+    
+    border-radius: 8px;
+    background-color: white;
+}
+
+h1 {
+    color: var(--primary);
+    margin: 8px;
+    text-align: center;
+    
+}
+
+/* Barra de pesquisa */
+section.search {
+    margin-top: 8px;
+
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+section.search .bar {
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    text-indent: 10px;
+    outline: none;
+
+    background-color: var(--bgcolor);
+    border: 1.5px solid #bdbdbd;
+    border-radius: 8px;
+}
+.search .bar:focus {
+    border-color: var(--primary);
+}
+section.search .search-button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+
+    font-size: 18px;
+    
+    background-color: var(--primary);
+    border: none;
+    border-radius: 8px;
+}
+
+/* --- Seção principal de loja --- */
+section.shop {
+    margin-top: 26px;
+    height: 80%;
+
+    display: flex;
+    gap: 8px;
+}
+/* -- Seção Categorias -- */
+section.shop .categories {
+    padding: 8px;
+    width: 40%;
+    height: auto;
+    background-color: var(--bgcolor);
+    border-radius: 8px;
+}
+.category-div {
+    cursor: pointer;
+    padding: 8px;
+    font-size: 20px;
+    margin-bottom: 8px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: white;
+    border-radius: inherit;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.5);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.category-div:hover {
+    background-color: var(--secondary);
+}
+.category-div.selected, .category-div:active {
+    background-color: var(--primary);
+    color: white;
+    transition: none;
+}
+/* -- Seção Produtos -- */
+section.shop .products {
+    padding: 8px;
+    width: 100%;
+    height: auto;
+
+    overflow-y: scroll;
+    background-color: var(--bgcolor);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+/* - Cards - */
+.card {
+    width: 32%;
+    height: 16rem;
+    position: relative;
+
+    border-radius: 8px;
+
+    background-color: white;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.card:hover {
+    background-color: var(--secondary);
+    transform: translateY(-2px);
+}
+/* Imagem */
+.thumbnail {
+    padding: auto 0;
+    height: 60%;
+
+    background-color: white;
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.2);
+    border-radius: inherit;
+    overflow: hidden;
+    cursor: pointer;
+}
+.thumbnail img {
+    max-width: 100%;
+}
+/* Contéudo */
+.content {
+    padding: 4px;
+    height: 6.5em;
+    display: block;
+    cursor: pointer;
+}
+.content .name {
+    display: block;
+    font-weight: bold;
+    height: 55px;
+    overflow: hidden; 
+}
+.content .name:hover {
+    text-decoration: underline;
+}
+.content .price {
+    /* background-color: aqua; */
+    display: block;
+    margin: 6px 5px;
+    text-align: right;
+    letter-spacing: 0.5px;
+    font-size: 25px;
+    font-weight: bolder;
+    color: var(--primary);
+}
