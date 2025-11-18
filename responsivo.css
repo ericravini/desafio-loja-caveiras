@@ -1,0 +1,91 @@
+/* Mobile */
+@media (max-width: 700px) {
+  body, html {
+    padding: 0;
+    height: auto;
+    max-height: 100dvh;
+  }
+  
+  main {
+    margin: 0;
+    padding: 8px;
+    width: 100%;
+    height: auto;
+    
+    border-radius: 8px;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  /* Barra de pesquisa */
+  section.search {
+    margin-top: 20px;
+    padding: 4px;
+    position: sticky;
+    top: 6px;
+    
+    background-color: var(--bgcolor);
+    border-radius: 8px;
+    z-index: 10;
+  }
+  section.search .bar {
+    opacity: 1;
+  }
+  
+  /* --- Seção principal de loja --- */
+  section.shop {
+    margin-top: 8px;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  /* -- Seção Categorias -- */
+  section.shop .categories {
+    padding-bottom: 0; /* Necessário para que fique do tamanho certo, pois os elementos dentro têm um margin-bottom /*/
+    width: 100%;
+    height: fit-content;
+    max-height: 180px;
+    overflow: scroll;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .category-div {
+    font-size: 16px;
+    
+    display: inline-flex;
+    gap: 20px
+  }
+  .category-div:hover {
+    /* Não ter o efeito de hover no mobile */
+    background-color: white;
+    color: black;
+  }
+  /* - Cards - */
+  .card {
+    width: 49%;
+    height: 20rem;
+  }
+  .card:hover {
+    background-color: white;
+  }
+  .content {
+    height: 7.8em;
+    display: block;
+  }
+  .content .name {
+    font-size: 17px;
+    height: 80px;
+    overflow: hidden; 
+  }
+  .content .price {
+    margin: 5px 5px;
+    font-size: 24px;
+    letter-spacing: 0.2px;
+  }
+}
