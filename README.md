@@ -7,7 +7,7 @@
 
 ## 🖼️ Imagem do projeto:
 ![Tela do projeto](./tela-do-site.png)
-> *Projetado apenas para desktop, não é responsivo com outros tamanhos de tela.*
+> *Também é responsivo com outros tamanhos de tela*
 
 ---
 
