@@ -35,7 +35,6 @@ h1 {
     color: var(--primary);
     margin: 8px;
     text-align: center;
-    
 }
 
 /* Barra de pesquisa */
@@ -63,7 +62,7 @@ section.search .bar {
 }
 section.search .search-button {
     cursor: pointer;
-    width: 40px;
+    width: 50px;
     height: 40px;
 
     font-size: 18px;
@@ -71,6 +70,10 @@ section.search .search-button {
     background-color: var(--primary);
     border: none;
     border-radius: 8px;
+    transition: background-color 0.2s linear;
+}
+section.search .search-button:active {
+    background-color: var(--secondary);
 }
 
 /* --- Seção principal de loja --- */
@@ -105,8 +108,10 @@ section.shop .categories {
 }
 .category-div:hover {
     background-color: var(--secondary);
+    color: black;
 }
-.category-div.selected, .category-div:active {
+.category-div.selected, 
+.category-div:active {
     background-color: var(--primary);
     color: white;
     transition: none;
@@ -121,7 +126,7 @@ section.shop .products {
     background-color: var(--bgcolor);
     border-radius: 8px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 8px;
 }
@@ -143,8 +148,11 @@ section.shop .products {
 }
 /* Imagem */
 .thumbnail {
-    padding: auto 0;
+    display: flex;
+    align-items: center;
+    
     height: 60%;
+    max-height: 60%;
 
     background-color: white;
     box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.2);
